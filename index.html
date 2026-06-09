@@ -1,0 +1,633 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Insektenschutz Bamberg & Fliegengitter nach Maß | Rosenstock Insektenschutz</title>
+<meta name="description" content="Insektenschutz & Fliegengitter nach Maß in Bamberg und ganz Franken. Beratung, Aufmaß und Montage aus einer Hand – persönlich vom Fachbetrieb. Jetzt kostenlos beraten lassen.">
+<meta name="robots" content="index, follow">
+<link rel="canonical" href="https://www.rosenstock-insektenschutz.de/">
+
+<!-- Open Graph -->
+<meta property="og:type" content="website">
+<meta property="og:title" content="Insektenschutz Bamberg & Fliegengitter nach Maß | Rosenstock Insektenschutz">
+<meta property="og:description" content="Insektenschutz & Fliegengitter nach Maß in Bamberg und ganz Franken – Beratung, Aufmaß und Montage aus einer Hand.">
+<meta property="og:locale" content="de_DE">
+<meta property="og:image" content="assets/fliegenschutz-bamberg.png">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Anton&family=Caveat:wght@500;600&family=Hanken+Grotesk:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+<!-- Local Business structured data (gut fürs lokale SEO) -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "HomeAndConstructionBusiness",
+  "name": "Rosenstock Insektenschutz",
+  "image": "https://www.rosenstock-insektenschutz.de/assets/fliegenschutz-bamberg.png",
+  "description": "Insektenschutz und Fliegengitter nach Maß in Bamberg und Franken. Beratung, Aufmaß und Montage aus einer Hand.",
+  "founder": "Sascha Rosenstock",
+  "telephone": "+49-1512-7570207",
+  "email": "info@rosenstock-insektenschutz.de",
+  "address": {
+    "@type": "PostalAddress",
+    "streetAddress": "Am Kreuzweiher 5a",
+    "postalCode": "96135",
+    "addressLocality": "Stegaurach",
+    "addressRegion": "Bayern",
+    "addressCountry": "DE"
+  },
+  "areaServed": ["Bamberg", "Stegaurach", "Franken", "Oberfranken", "Oberpfalz"],
+  "slogan": "Mehr Komfort. Mehr Lebensqualität. Weniger Insekten."
+}
+</script>
+
+<style>
+  :root{
+    --bg:#100f0b;
+    --bg-soft:#17160f;
+    --panel:#1c1b13;
+    --cream:#f4f2e9;
+    --cream-soft:#e9e6d8;
+    --ink:#16150f;
+    --olive:#4b5c26;
+    --olive-bright:#7e9c3e;
+    --olive-dim:rgba(126,156,62,.16);
+    --line-dark:rgba(244,242,233,.12);
+    --line-light:rgba(22,21,15,.12);
+    --muted-dark:rgba(244,242,233,.66);
+    --muted-light:rgba(22,21,15,.66);
+    --radius:18px;
+    --ease:cubic-bezier(.22,.61,.36,1);
+  }
+
+  *{margin:0;padding:0;box-sizing:border-box}
+  html{scroll-behavior:smooth}
+  body{
+    font-family:'Hanken Grotesk',system-ui,sans-serif;
+    background:var(--bg);
+    color:var(--cream);
+    line-height:1.6;
+    -webkit-font-smoothing:antialiased;
+    overflow-x:hidden;
+  }
+  img{display:block;max-width:100%;height:auto}
+  a{color:inherit;text-decoration:none}
+
+  /* Fliegengitter-Motiv: feine Gittertextur */
+  .mesh{
+    position:absolute;inset:0;pointer-events:none;
+    background-image:
+      repeating-linear-gradient(0deg, rgba(244,242,233,.035) 0 1px, transparent 1px 7px),
+      repeating-linear-gradient(90deg, rgba(244,242,233,.035) 0 1px, transparent 1px 7px);
+    mask-image:radial-gradient(120% 90% at 70% 0%, #000 30%, transparent 78%);
+    -webkit-mask-image:radial-gradient(120% 90% at 70% 0%, #000 30%, transparent 78%);
+  }
+
+  .wrap{width:min(1180px,92vw);margin-inline:auto}
+
+  h1,h2,h3{line-height:1.05;font-weight:800}
+  .anton{font-family:'Anton',sans-serif;font-weight:400;letter-spacing:.01em;text-transform:uppercase;line-height:.96}
+  .script{font-family:'Caveat',cursive;font-weight:600}
+  .kicker{
+    font-size:.82rem;letter-spacing:.22em;text-transform:uppercase;font-weight:700;
+    color:var(--olive-bright);display:inline-flex;align-items:center;gap:.7rem;
+  }
+  .kicker::before{content:"";width:34px;height:1px;background:var(--olive-bright);display:inline-block}
+
+  /* Brush-Highlight unter Schlüsselwörtern */
+  .brush{position:relative;white-space:nowrap}
+  .brush svg{position:absolute;left:-4%;bottom:-.18em;width:108%;height:.5em;overflow:visible}
+  .brush svg path{stroke:var(--olive-bright);stroke-width:13;fill:none;stroke-linecap:round;
+    stroke-dasharray:640;stroke-dashoffset:640;transition:stroke-dashoffset 1.1s var(--ease) .3s}
+  .reveal.in .brush svg path{stroke-dashoffset:0}
+
+  /* Buttons */
+  .btn{
+    display:inline-flex;align-items:center;gap:.6rem;
+    font-weight:700;font-size:.98rem;letter-spacing:.01em;
+    padding:.95rem 1.6rem;border-radius:999px;cursor:pointer;border:1px solid transparent;
+    transition:transform .25s var(--ease),background .25s,box-shadow .25s,color .25s;
+  }
+  .btn-primary{background:var(--olive-bright);color:#10130a;box-shadow:0 0 0 0 var(--olive-dim)}
+  .btn-primary:hover{transform:translateY(-3px);box-shadow:0 16px 40px -12px rgba(126,156,62,.8)}
+  .btn-ghost{border-color:var(--line-dark);color:var(--cream);background:transparent}
+  .btn-ghost:hover{border-color:var(--olive-bright);transform:translateY(-3px);background:rgba(244,242,233,.04)}
+  .btn svg{width:18px;height:18px}
+
+  /* ===== HEADER ===== */
+  header{
+    position:fixed;top:0;left:0;right:0;z-index:60;
+    transition:background .35s,backdrop-filter .35s,padding .35s,border-color .35s;
+    border-bottom:1px solid transparent;padding:1.3rem 0;
+  }
+  header.scrolled{
+    background:rgba(16,15,11,.82);backdrop-filter:blur(14px);
+    border-bottom:1px solid var(--line-dark);padding:.7rem 0;
+  }
+  .nav{display:flex;align-items:center;justify-content:space-between;gap:2rem}
+  .nav-logo img{height:110px;transition:height .35s}
+  header.scrolled .nav-logo img{height:80px}
+  .nav-links{display:flex;align-items:center;gap:2rem;list-style:none}
+  .nav-links a{font-size:.95rem;font-weight:600;position:relative;color:var(--muted-dark);transition:color .2s}
+  .nav-links a::after{content:"";position:absolute;left:0;bottom:-6px;height:2px;width:0;background:var(--olive-bright);transition:width .3s var(--ease)}
+  .nav-links a:hover{color:var(--cream)}
+  .nav-links a:hover::after{width:100%}
+  .nav-cta{display:flex;align-items:center;gap:1.3rem}
+  .nav-phone{font-weight:700;font-size:.95rem;display:flex;align-items:center;gap:.5rem;white-space:nowrap}
+  .nav-phone svg{width:16px;height:16px;color:var(--olive-bright)}
+  .burger{display:none;flex-direction:column;gap:5px;background:none;border:0;cursor:pointer;padding:6px}
+  .burger span{width:26px;height:2px;background:var(--cream);transition:.3s}
+  .burger.open span:nth-child(1){transform:translateY(7px) rotate(45deg)}
+  .burger.open span:nth-child(2){opacity:0}
+  .burger.open span:nth-child(3){transform:translateY(-7px) rotate(-45deg)}
+
+  /* ===== HERO ===== */
+  .hero{position:relative;padding:11rem 0 5rem;overflow:hidden}
+  .hero-bg{position:absolute;inset:0;z-index:0}
+  .hero-bg::after{content:"";position:absolute;inset:0;
+    background:radial-gradient(80% 70% at 15% 30%, transparent, var(--bg) 72%),
+               linear-gradient(180deg, rgba(16,15,11,.4), var(--bg))}
+  .hero-grid{position:relative;z-index:2;display:grid;grid-template-columns:1.05fr .95fr;gap:3.5rem;align-items:center}
+  .hero-h1{font-size:clamp(2.6rem,6.4vw,5.2rem);margin:1.4rem 0 0;font-weight:400;letter-spacing:.01em}
+  .hero-h1 .ol{color:var(--olive-bright)}
+  .hero-claim-sub{font-size:1.3rem;font-weight:700;margin:1.1rem 0 .3rem;color:var(--cream)}
+  .hero-claim-sub .script{color:var(--olive-bright);font-size:1.7rem;font-weight:600;margin-left:.25rem}
+  .hero-sub{font-size:1.08rem;color:var(--muted-dark);max-width:34rem;margin-bottom:2rem}
+  .hero-actions{display:flex;flex-wrap:wrap;gap:1rem;align-items:center}
+  .hero-media{position:relative}
+  .hero-media .frame{border-radius:24px;overflow:hidden;position:relative;box-shadow:0 40px 80px -30px rgba(0,0,0,.9);border:1px solid var(--line-dark)}
+  .hero-media .frame img{width:100%;aspect-ratio:4/4.4;object-fit:cover}
+  .hero-badge{
+    position:absolute;left:-26px;bottom:34px;z-index:3;
+    background:var(--bg-soft);border:1px solid var(--line-dark);border-radius:16px;
+    padding:1rem 1.2rem;box-shadow:0 24px 50px -20px rgba(0,0,0,.9);
+    display:flex;gap:.85rem;align-items:center;max-width:230px;
+  }
+  .hero-badge b{font-family:'Anton';font-size:1.5rem;color:var(--olive-bright);line-height:1}
+  .hero-badge span{font-size:.82rem;color:var(--muted-dark);line-height:1.3}
+
+  /* Trust strip */
+  .trust{border-top:1px solid var(--line-dark);border-bottom:1px solid var(--line-dark);background:var(--bg-soft)}
+  .trust-row{display:grid;grid-template-columns:repeat(4,1fr);gap:1px;background:var(--line-dark)}
+  .trust-item{background:var(--bg-soft);padding:1.7rem 1.3rem;display:flex;gap:.9rem;align-items:center}
+  .trust-item svg{width:30px;height:30px;color:var(--olive-bright);flex-shrink:0}
+  .trust-item span{font-weight:700;font-size:.95rem;line-height:1.25}
+
+  /* ===== generic section ===== */
+  section.block{padding:6.5rem 0;position:relative}
+  .light{background:var(--cream);color:var(--ink)}
+  .light .kicker{color:var(--olive)}
+  .light .kicker::before{background:var(--olive)}
+  .light .lead{color:var(--muted-light)}
+  .sec-head{max-width:46rem;margin-bottom:3.2rem}
+  .sec-head h2{font-size:clamp(2rem,4.2vw,3.2rem);margin:1.1rem 0 1rem}
+  .lead{font-size:1.12rem;color:var(--muted-dark)}
+
+  /* Prozess */
+  .steps{display:grid;grid-template-columns:repeat(4,1fr);gap:1.6rem;counter-reset:s}
+  .step{position:relative}
+  .step .num{font-family:'Anton';font-size:2.8rem;line-height:1;color:var(--olive);display:block}
+  .step .bar{height:3px;width:44px;background:var(--olive);border-radius:3px;margin:.7rem 0 1.1rem}
+  .step h3{font-size:1.18rem;margin:0 0 .5rem}
+  .step p{font-size:.97rem;color:var(--muted-light)}
+
+  /* Warum (dark contrast) */
+  .compare{display:grid;grid-template-columns:1fr 1fr;gap:1.4rem;margin-top:1rem}
+  .card{border:1px solid var(--line-dark);border-radius:var(--radius);padding:2rem;transition:transform .3s var(--ease),border-color .3s}
+  .card-bad{background:rgba(244,242,233,.02)}
+  .card-good{background:linear-gradient(160deg, rgba(126,156,62,.14), rgba(126,156,62,.02));border-color:rgba(126,156,62,.35)}
+  .card h3{font-size:1.25rem;margin-bottom:1rem;display:flex;align-items:center;gap:.6rem}
+  .card ul{list-style:none;display:flex;flex-direction:column;gap:.75rem}
+  .card li{display:flex;gap:.7rem;font-size:1rem;color:var(--muted-dark)}
+  .card-good li{color:var(--cream)}
+  .card li svg{width:20px;height:20px;flex-shrink:0;margin-top:.18rem}
+  .card-good li svg{color:var(--olive-bright)}
+  .card-bad li svg{color:rgba(244,242,233,.35)}
+
+  /* Leistungen grid */
+  .serv{display:grid;grid-template-columns:repeat(3,1fr);gap:1.2rem}
+  .serv-item{background:#fff;border:1px solid var(--line-light);border-radius:var(--radius);padding:1.7rem;
+    transition:transform .3s var(--ease),box-shadow .3s,border-color .3s}
+  .serv-item:hover{transform:translateY(-6px);box-shadow:0 24px 50px -28px rgba(22,21,15,.4);border-color:var(--olive)}
+  .serv-item svg{width:34px;height:34px;color:var(--olive);margin-bottom:1rem}
+  .serv-item h3{font-size:1.12rem;margin-bottom:.4rem}
+  .serv-item p{font-size:.94rem;color:var(--muted-light)}
+  .serv-note{margin-top:1.8rem;font-size:1rem;color:var(--muted-light);max-width:48rem}
+  .serv-note b{color:var(--ink)}
+
+  /* Über Sascha */
+  .about{display:grid;grid-template-columns:.85fr 1.15fr;gap:3.5rem;align-items:center}
+  .about-img{position:relative}
+  .about-img img{border-radius:20px;border:1px solid var(--line-dark);width:100%;aspect-ratio:1023/1537;object-fit:cover;max-height:560px}
+  .about-img .tag{position:absolute;bottom:18px;left:18px;background:var(--bg);border:1px solid var(--line-dark);
+    padding:.55rem 1rem;border-radius:999px;font-size:.85rem;font-weight:700}
+  .about blockquote{font-family:'Caveat';font-size:1.9rem;color:var(--olive-bright);line-height:1.25;margin:1.4rem 0;font-weight:600}
+
+  /* Regionen */
+  .regions{display:flex;flex-wrap:wrap;gap:.8rem;margin-top:.5rem}
+  .chip{border:1px solid var(--line-light);border-radius:999px;padding:.6rem 1.2rem;font-weight:600;font-size:.95rem;
+    transition:background .25s,color .25s,border-color .25s;cursor:default}
+  .chip:hover{background:var(--olive);color:var(--cream);border-color:var(--olive)}
+  .region-grid{display:grid;grid-template-columns:1.1fr .9fr;gap:3rem;align-items:center}
+
+  /* Versprechen */
+  .promise{text-align:center;max-width:50rem;margin-inline:auto}
+  .promise .anton{font-size:clamp(1.8rem,4vw,2.8rem)}
+  .promise p{font-size:1.15rem;color:var(--muted-dark);margin:1.5rem 0 0}
+  .promise .sig{font-family:'Caveat';font-size:2.1rem;color:var(--olive-bright);margin-top:1.4rem}
+
+  /* Final CTA */
+  .cta{position:relative;overflow:hidden;
+    background:linear-gradient(150deg,#1f2511,#10130a 60%);padding:6rem 0}
+  .cta-inner{position:relative;z-index:2;text-align:center;max-width:42rem;margin-inline:auto}
+  .cta h2{font-size:clamp(2.2rem,5vw,3.6rem);margin-bottom:1.2rem}
+  .cta p{color:var(--muted-dark);font-size:1.1rem;margin-bottom:2.2rem}
+  .cta-actions{display:flex;flex-wrap:wrap;gap:1rem;justify-content:center}
+
+  /* Footer */
+  footer{background:#0b0a07;border-top:1px solid var(--line-dark);padding:4.5rem 0 2rem}
+  .foot-grid{display:grid;grid-template-columns:1.4fr 1fr 1fr 1.1fr;gap:2.5rem}
+  .foot-logo img{height:140px;margin-bottom:1.2rem}
+  .foot-grid p,.foot-grid a{color:var(--muted-dark);font-size:.95rem;line-height:1.8}
+  .foot-grid a:hover{color:var(--olive-bright)}
+  .foot-col ul li{color:var(--muted-dark)}
+  .foot-contact{list-style:none}
+  .foot-contact li{display:flex;gap:.65rem;align-items:flex-start;margin-bottom:.6rem;color:var(--muted-dark);font-size:.95rem;line-height:1.5}
+  .foot-contact li svg{width:17px;height:17px;color:var(--olive-bright);flex-shrink:0;margin-top:.2rem}
+  .foot-col h4{font-size:.8rem;letter-spacing:.18em;text-transform:uppercase;color:var(--cream);margin-bottom:1rem;font-weight:700}
+  .foot-col ul{list-style:none}
+  .foot-bottom{border-top:1px solid var(--line-dark);margin-top:3rem;padding-top:1.6rem;
+    display:flex;justify-content:space-between;flex-wrap:wrap;gap:1rem;font-size:.85rem;color:rgba(244,242,233,.45)}
+  .foot-bottom a{color:rgba(244,242,233,.45)}
+  .foot-bottom a:hover{color:var(--olive-bright)}
+  .foot-credit{text-align:center;margin-top:1.3rem;font-size:.82rem;color:rgba(244,242,233,.4)}
+  .foot-credit a{color:rgba(244,242,233,.6);font-weight:600}
+  .foot-credit a:hover{color:var(--olive-bright)}
+
+
+  /* Reveal animation */
+  .reveal{opacity:0;transform:translateY(30px);transition:opacity .8s var(--ease),transform .8s var(--ease)}
+  .reveal.in{opacity:1;transform:none}
+  .reveal[data-d="1"]{transition-delay:.08s}
+  .reveal[data-d="2"]{transition-delay:.16s}
+  .reveal[data-d="3"]{transition-delay:.24s}
+  .reveal[data-d="4"]{transition-delay:.32s}
+
+  /* Mobile menu */
+  .mobile-menu{position:fixed;inset:0 0 0 auto;width:min(82vw,340px);z-index:65;
+    background:var(--bg-soft);border-left:1px solid var(--line-dark);
+    transform:translateX(100%);transition:transform .4s var(--ease);
+    padding:6rem 2rem 2rem;display:flex;flex-direction:column;gap:1.4rem}
+  .mobile-menu.open{transform:none}
+  .mobile-menu a{font-size:1.15rem;font-weight:600}
+  .overlay{position:fixed;inset:0;background:rgba(0,0,0,.5);z-index:64;opacity:0;pointer-events:none;transition:.3s}
+  .overlay.open{opacity:1;pointer-events:auto}
+
+  @media (max-width:960px){
+    .hero-grid{grid-template-columns:1fr;gap:2.5rem}
+    .hero-media{order:-1;max-width:440px}
+    .trust-row{grid-template-columns:1fr 1fr}
+    .steps{grid-template-columns:1fr 1fr;gap:2rem}
+    .compare,.about,.region-grid,.serv{grid-template-columns:1fr}
+    .about-img{max-width:380px}
+    .nav-links,.nav-phone{display:none}
+    .burger{display:flex}
+    .foot-grid{grid-template-columns:1fr 1fr}
+  }
+  @media (max-width:560px){
+    .trust-row{grid-template-columns:1fr}
+    .steps{grid-template-columns:1fr}
+    .foot-grid{grid-template-columns:1fr}
+    .hero{padding-top:8.5rem}
+  }
+  @media (prefers-reduced-motion:reduce){
+    *{animation:none!important;transition:none!important;scroll-behavior:auto}
+    .reveal{opacity:1;transform:none}
+    .brush svg path{stroke-dashoffset:0}
+  }
+</style>
+</head>
+<body>
+
+<!-- ===== HEADER ===== -->
+<header id="header">
+  <div class="wrap nav">
+    <a href="#top" class="nav-logo" aria-label="Rosenstock Insektenschutz Startseite">
+      <img src="assets/rosenstock-logo.svg" alt="Rosenstock Insektenschutz Logo">
+    </a>
+    <ul class="nav-links">
+      <li><a href="#leistungen">Leistungen</a></li>
+      <li><a href="#ueber">Über mich</a></li>
+      <li><a href="#kontakt">Kontakt</a></li>
+    </ul>
+    <div class="nav-cta">
+      <a href="tel:+4915127570207" class="nav-phone">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.8 19.8 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.8 19.8 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.13.96.36 1.9.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.91.34 1.85.57 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+        0151 257 02 07
+      </a>
+      <a href="#kontakt" class="btn btn-primary">Beratung anfragen</a>
+    </div>
+    <button class="burger" id="burger" aria-label="Menü öffnen"><span></span><span></span><span></span></button>
+  </div>
+</header>
+
+<div class="overlay" id="overlay"></div>
+<nav class="mobile-menu" id="mobileMenu" aria-label="Mobiles Menü">
+  <a href="#leistungen">Leistungen</a>
+  <a href="#ueber">Über mich</a>
+  <a href="#kontakt">Kontakt</a>
+  <a href="tel:+4915127570207" class="btn btn-ghost" style="margin-top:1rem">0151 257 02 07</a>
+  <a href="#kontakt" class="btn btn-primary">Beratung anfragen</a>
+</nav>
+
+<!-- ===== HERO ===== -->
+<a id="top"></a>
+<section class="hero">
+  <div class="hero-bg">
+    <img src="assets/fliegenschutz-bamberg.png" alt="Insektenschutz-Schiebetür an einer modernen Terrasse in Bamberg" style="width:100%;height:100%;object-fit:cover;opacity:.28">
+  </div>
+  <div class="mesh"></div>
+  <div class="wrap hero-grid">
+    <div>
+      <span class="kicker reveal in">Dein Fachbetrieb aus Stegaurach bei Bamberg</span>
+      <h1 class="hero-h1 anton reveal in" data-d="1">Fliegengitter &amp;<br>Insektenschutz<br><span class="ol">Bamberg</span></h1>
+      <p class="hero-claim-sub reveal in" data-d="2">Maßgefertigt vom Profi.<span class="script">Mehr Komfort, weniger Insekten.</span></p>
+      <p class="hero-sub reveal in" data-d="2">Beratung, exaktes Aufmaß und fachgerechte Montage – alles aus einer Hand. Ich finde für dein Zuhause die Lösung, die wirklich passt. Persönlich, ehrlich und passgenau.</p>
+      <div class="hero-actions reveal in" data-d="3">
+        <a href="#kontakt" class="btn btn-primary">Kostenlose Beratung anfragen</a>
+        <a href="tel:+4915127570207" class="btn btn-ghost">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.8 19.8 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.8 19.8 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.13.96.36 1.9.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.91.34 1.85.57 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+          0151 257 02 07
+        </a>
+      </div>
+    </div>
+    <div class="hero-media reveal in" data-d="2">
+      <div class="frame">
+        <img src="assets/fliegenschutz-bamberg.png" alt="Maßgefertigter Insektenschutz an einer Terrassentür mit Blick in den Garten">
+      </div>
+      <div class="hero-badge">
+        <b>100%</b>
+        <span>aus einer Hand – Beratung, Aufmaß &amp; Montage</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== TRUST ===== -->
+<div class="trust">
+  <div class="wrap">
+    <div class="trust-row">
+      <div class="trust-item reveal" data-d="1">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><circle cx="12" cy="8" r="6"/><path d="M8.5 13.5 7 22l5-3 5 3-1.5-8.5"/></svg>
+        <span>Hochwertige Materialien</span>
+      </div>
+      <div class="trust-item reveal" data-d="2">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M12 2 4 5v6c0 5 3.4 8.5 8 11 4.6-2.5 8-6 8-11V5l-8-3z"/><path d="m9 12 2 2 4-4"/></svg>
+        <span>Saubere, fachgerechte Montage</span>
+      </div>
+      <div class="trust-item reveal" data-d="3">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg>
+        <span>Zuverlässig &amp; pünktlich</span>
+      </div>
+      <div class="trust-item reveal" data-d="4">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M3 21v-2a4 4 0 0 1 4-4h4a4 4 0 0 1 4 4v2"/><circle cx="9" cy="7" r="3"/><path d="M16 3.1a4 4 0 0 1 0 7.7M22 21v-2a4 4 0 0 0-3-3.85"/></svg>
+        <span>Ein fester Ansprechpartner</span>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- ===== PROZESS ===== -->
+<section class="block light" id="prozess">
+  <div class="wrap">
+    <div class="sec-head reveal">
+      <span class="kicker">Alles aus einer Hand</span>
+      <h2 class="anton">Dein Insektenschutz<br>in vier Schritten</h2>
+      <p class="lead">Bei vielen großen Firmen ist Insektenschutz nur ein Nebengeschäft – die Beratung bleibt auf der Strecke. Bei mir bekommst du den kompletten Weg von einer Person begleitet. Das vermeidet Fehler und sorgt dafür, dass am Ende alles passt.</p>
+    </div>
+    <div class="steps">
+      <div class="step reveal" data-d="1"><span class="num">01</span><div class="bar"></div><h3>Beratung vor Ort</h3><p>Ich komme zu dir, schaue mir deine Situation an und finde mit dir gemeinsam die richtige Lösung – ohne dich mit 1.000 Optionen zu überfordern.</p></div>
+      <div class="step reveal" data-d="2"><span class="num">02</span><div class="bar"></div><h3>Exaktes Aufmaß</h3><p>Präzises, professionelles Aufmaß direkt am Objekt. So sitzt jeder Rahmen später millimetergenau.</p></div>
+      <div class="step reveal" data-d="3"><span class="num">03</span><div class="bar"></div><h3>Maßanfertigung</h3><p>Deine Elemente werden passgenau für deine Fenster und Türen produziert – in der Qualität, die hält.</p></div>
+      <div class="step reveal" data-d="4"><span class="num">04</span><div class="bar"></div><h3>Fachgerechte Montage</h3><p>Ich montiere selbst – sauber und so, dass Fenster, Türen, Rollläden und Raffstores weiter einwandfrei funktionieren.</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== WARUM (dark) ===== -->
+<section class="block" id="warum">
+  <div class="wrap">
+    <div class="sec-head reveal">
+      <span class="kicker">Warum vom Fachbetrieb</span>
+      <h2 class="anton">Insektenschutz statt<br>Baumarkt-Kompromiss</h2>
+      <p class="lead">Insektenschutz wird an hochwertigen Fenstern, Türen, Rollläden oder Raffstores montiert. Damit alles weiter funktioniert und nichts beschädigt wird, braucht es Erfahrung. Genau die bringe ich aus sechs Jahren im Bereich Bauelemente mit.</p>
+    </div>
+    <div class="compare">
+      <div class="card card-bad reveal" data-d="1">
+        <h3>Baumarkt &amp; Online-Shop</h3>
+        <ul>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 6 6 18M6 6l12 12"/></svg>Standardmaße, die selten wirklich passen</li>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 6 6 18M6 6l12 12"/></svg>Keine Beratung – du bist auf dich allein gestellt</li>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 6 6 18M6 6l12 12"/></svg>Selbstmontage mit Risiko für Fenster &amp; Rollläden</li>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 6 6 18M6 6l12 12"/></svg>Niemand, der bei Problemen erreichbar ist</li>
+        </ul>
+      </div>
+      <div class="card card-good reveal" data-d="2">
+        <h3>Rosenstock Insektenschutz</h3>
+        <ul>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 6 9 17l-5-5"/></svg>Maßgefertigt – millimetergenau für dein Zuhause</li>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 6 9 17l-5-5"/></svg>Ehrliche, persönliche Beratung direkt vor Ort</li>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 6 9 17l-5-5"/></svg>Fachgerechte Montage ohne Schäden an deinen Elementen</li>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 6 9 17l-5-5"/></svg>Ein fester Ansprechpartner – vom ersten Anruf bis zum Einbau</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== LEISTUNGEN ===== -->
+<section class="block light" id="leistungen">
+  <div class="wrap">
+    <div class="sec-head reveal">
+      <span class="kicker">Für Fenster, Türen &amp; mehr</span>
+      <h2 class="anton">Insektenschutz, der<br>zu dir passt</h2>
+      <p class="lead">Vom klassischen Spannrahmen bis zur Sonderlösung im Denkmalschutz – ich biete das volle Programm. Welche Variante für dich die richtige ist, klären wir gemeinsam vor Ort.</p>
+    </div>
+    <div class="serv">
+      <div class="serv-item reveal" data-d="1">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7"><rect x="4" y="3" width="16" height="18" rx="1"/><path d="M4 12h16M12 3v18"/></svg>
+        <h3>Fenster &amp; Spannrahmen</h3><p>Robuste Rahmen nach Maß – auch ohne Bohren für Mietwohnungen geeignet.</p>
+      </div>
+      <div class="serv-item reveal" data-d="2">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7"><rect x="6" y="3" width="12" height="18" rx="1"/><circle cx="14.5" cy="12" r="1"/></svg>
+        <h3>Türen &amp; Schiebeanlagen</h3><p>Dreh- und Schiebesysteme für Terrasse, Balkon und Eingang.</p>
+      </div>
+      <div class="serv-item reveal" data-d="3">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7"><path d="M4 4h16M4 8h16M4 12h16M4 16h16M4 20h16"/></svg>
+        <h3>Plissees &amp; Rollos</h3><p>Komfortable Lösungen, die sich platzsparend zur Seite oder nach oben führen lassen.</p>
+      </div>
+      <div class="serv-item reveal" data-d="1">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7"><path d="m3 11 9-8 9 8M5 9v11h14V9"/></svg>
+        <h3>Dachfenster &amp; Lichtschächte</h3><p>Passgenauer Schutz für Velux &amp; Co. und Abdeckungen für Kellerschächte.</p>
+      </div>
+      <div class="serv-item reveal" data-d="2">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7"><path d="M12 2 4 5v6c0 5 3.4 8.5 8 11 4.6-2.5 8-6 8-11V5z"/></svg>
+        <h3>Pollen- &amp; Katzenschutz</h3><p>Spezialgewebe für Allergiker und besonders robuste Gewebe für Katzenhaushalte.</p>
+      </div>
+      <div class="serv-item reveal" data-d="3">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7"><path d="M12 2v20M2 12h20" /><circle cx="12" cy="12" r="9"/></svg>
+        <h3>Sonderbau &amp; Denkmalschutz</h3><p>Individuelle Lösungen, Sonderlackierungen und Reparatur bzw. Neubespannung.</p>
+      </div>
+    </div>
+    <p class="serv-note reveal"><b>Mein Versprechen:</b> Ich überschütte dich nicht mit hundert Möglichkeiten. Für deine Situation gibt es meist zwei oder drei sinnvolle Wege – und aus denen suchst du aus.</p>
+  </div>
+</section>
+
+<!-- ===== ÜBER SASCHA ===== -->
+<section class="block" id="ueber">
+  <div class="wrap about">
+    <div class="about-img reveal">
+      <img src="assets/sascha-rosenstock.png" alt="Sascha Rosenstock, Inhaber von Rosenstock Insektenschutz aus Stegaurach bei Bamberg">
+      <span class="tag">Sascha Rosenstock · Inhaber</span>
+    </div>
+    <div class="reveal" data-d="1">
+      <span class="kicker">Der Chef ist greifbar</span>
+      <h2 class="anton" style="font-size:clamp(2rem,4.2vw,3rem);margin:1rem 0">Bei mir bekommst du<br>mich – nicht ein Callcenter</h2>
+      <blockquote>„Ich habe zu oft erlebt, wie Insektenschutz schiefgeht, wenn niemand richtig hinschaut. Deshalb mache ich alles selbst.&rdquo;</blockquote>
+      <p class="lead" style="color:var(--muted-dark)">Sechs Jahre war ich Kundendiensttechniker für Bauelemente und habe gesehen, wie hoch die Fehlerquote ist, wenn Verkauf, Aufmaß und Montage auf drei Schultern verteilt sind. Daraus habe ich meinen eigenen Weg gemacht: Beratung, Aufmaß und Einbau aus einer Hand. Bei besonders anspruchsvollen Projekten hole ich meinen Kompagnon dazu – einen Schreinermeister mit langjähriger Erfahrung.</p>
+      <a href="#kontakt" class="btn btn-primary" style="margin-top:1.8rem">Lern mich kennen</a>
+    </div>
+  </div>
+</section>
+
+<!-- ===== REGIONEN ===== -->
+<section class="block light" id="regionen">
+  <div class="wrap region-grid">
+    <div class="reveal">
+      <span class="kicker">Dein Einzugsgebiet</span>
+      <h2 class="anton" style="font-size:clamp(2rem,4.2vw,3rem);margin:1rem 0">Insektenschutz in Bamberg,<br>Franken &amp; der Oberpfalz</h2>
+      <p class="lead">Mein Schwerpunkt liegt rund um Bamberg. Über die Jahre ist ein Kundenstamm in ganz Franken und Teilen der Oberpfalz dazugekommen – und ich freue mich, mein Gebiet weiter auszubauen. Egal wo: Ich komme persönlich vorbei, messe auf und montiere selbst.</p>
+    </div>
+    <div class="reveal" data-d="1">
+      <div class="regions">
+        <span class="chip">Bamberg</span>
+        <span class="chip">Stegaurach</span>
+        <span class="chip">Oberfranken</span>
+        <span class="chip">Franken</span>
+        <span class="chip">Oberpfalz</span>
+        <span class="chip">… und Umgebung</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== VERSPRECHEN ===== -->
+<section class="block" id="versprechen">
+  <div class="wrap promise reveal">
+    <span class="kicker" style="justify-content:center">Mein Versprechen</span>
+    <p class="anton" style="margin-top:1rem">Individuell. Hochwertig. Langlebig.</p>
+    <p>Du bekommst keine Lösung von der Stange, sondern Insektenschutz, der zu deinem Zuhause, deinem Alltag und deinem Budget passt. Ehrlich beraten, sauber gebaut, fachgerecht montiert.</p>
+    <div class="sig">– Sascha Rosenstock</div>
+  </div>
+</section>
+
+<!-- ===== FINAL CTA ===== -->
+<section class="cta" id="kontakt">
+  <div class="mesh"></div>
+  <div class="wrap cta-inner reveal">
+    <h2 class="anton">Bereit für insektenfreie<br>Sommerabende?</h2>
+    <p>Schreib mir, wonach du suchst – ich melde mich und wir vereinbaren einen Termin für die kostenlose Beratung vor Ort. Ganz unverbindlich.</p>
+    <div class="cta-actions">
+      <a href="tel:+4915127570207" class="btn btn-primary">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.8 19.8 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.8 19.8 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.13.96.36 1.9.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.91.34 1.85.57 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+        0151 257 02 07
+      </a>
+      <a href="mailto:info@rosenstock-insektenschutz.de" class="btn btn-ghost">E-Mail schreiben</a>
+    </div>
+  </div>
+</section>
+
+<!-- ===== FOOTER ===== -->
+<footer>
+  <div class="wrap">
+    <div class="foot-grid">
+      <div class="foot-col">
+        <div class="foot-logo"><img src="assets/rosenstock-logo.svg" alt="Rosenstock Insektenschutz"></div>
+        <p>Insektenschutz und Fliegengitter nach Maß – persönlich beraten, fachgerecht montiert. Dein Fachbetrieb aus Stegaurach für Bamberg und ganz Franken.</p>
+      </div>
+      <div class="foot-col">
+        <h4>Kontakt</h4>
+        <ul class="foot-contact">
+          <li>
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.8 19.8 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.8 19.8 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.13.96.36 1.9.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.91.34 1.85.57 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+            <a href="tel:+4915127570207">0151 257 02 07</a>
+          </li>
+          <li>
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m22 7-10 6L2 7"/></svg>
+            <a href="mailto:info@rosenstock-insektenschutz.de">info@rosenstock-insektenschutz.de</a>
+          </li>
+          <li>
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0z"/><circle cx="12" cy="10" r="3"/></svg>
+            <span>Am Kreuzweiher 5a, 96135 Stegaurach</span>
+          </li>
+        </ul>
+      </div>
+      <div class="foot-col">
+        <h4>Leistungen</h4>
+        <ul>
+          <li><a href="#leistungen">Fenster &amp; Spannrahmen</a></li>
+          <li><a href="#leistungen">Türen &amp; Schiebeanlagen</a></li>
+          <li><a href="#leistungen">Plissees &amp; Rollos</a></li>
+          <li><a href="#leistungen">Pollen- &amp; Katzenschutz</a></li>
+        </ul>
+      </div>
+      <div class="foot-col">
+        <h4>Region</h4>
+        <ul>
+          <li>Bamberg</li>
+          <li>Oberfranken</li>
+          <li>Franken</li>
+          <li>Oberpfalz</li>
+        </ul>
+      </div>
+    </div>
+    <div class="foot-bottom">
+      <span>© 2026 Rosenstock Insektenschutz · Inhaber: Sascha Rosenstock</span>
+      <span><a href="#">Impressum</a> · <a href="#">Datenschutz</a></span>
+    </div>
+    <div class="foot-credit">
+      <a href="https://ritt-happens.de" target="_blank" rel="noopener">Webdesign für Handwerker by RITT HAPPENS</a>
+    </div>
+  </div>
+</footer>
+
+<script>
+  // Sticky header
+  const header = document.getElementById('header');
+  const onScroll = () => header.classList.toggle('scrolled', window.scrollY > 40);
+  onScroll(); window.addEventListener('scroll', onScroll, {passive:true});
+
+  // Mobile menu
+  const burger = document.getElementById('burger');
+  const menu = document.getElementById('mobileMenu');
+  const overlay = document.getElementById('overlay');
+  const toggle = (open) => {
+    burger.classList.toggle('open', open);
+    menu.classList.toggle('open', open);
+    overlay.classList.toggle('open', open);
+    document.body.style.overflow = open ? 'hidden' : '';
+  };
+  burger.addEventListener('click', () => toggle(!menu.classList.contains('open')));
+  overlay.addEventListener('click', () => toggle(false));
+  menu.querySelectorAll('a').forEach(a => a.addEventListener('click', () => toggle(false)));
+
+  // Scroll reveal
+  const io = new IntersectionObserver((entries) => {
+    entries.forEach(e => { if (e.isIntersecting){ e.target.classList.add('in'); io.unobserve(e.target);} });
+  }, {threshold:0.12, rootMargin:'0px 0px -8% 0px'});
+  document.querySelectorAll('.reveal:not(.in)').forEach(el => io.observe(el));
+</script>
+</body>
+</html>
